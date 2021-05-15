@@ -3804,3 +3804,2020 @@
                                   weights=None)]],
          verbose=False)
 2021-05-14 16:08:44,009:INFO:save_model() succesfully completed......................................
+2021-05-15 09:27:28,765:INFO:PyCaret Supervised Module
+2021-05-15 09:27:28,765:INFO:ML Usecase: classification
+2021-05-15 09:27:28,765:INFO:version 2.3.0
+2021-05-15 09:27:28,765:INFO:Initializing setup()
+2021-05-15 09:27:28,765:INFO:setup(target=y, ml_usecase=classification, available_plots={'parameter': 'Hyperparameters', 'auc': 'AUC', 'confusion_matrix': 'Confusion Matrix', 'threshold': 'Threshold', 'pr': 'Precision Recall', 'error': 'Prediction Error', 'class_report': 'Class Report', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'calibration': 'Calibration Curve', 'vc': 'Validation Curve', 'dimension': 'Dimensions', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'boundary': 'Decision Boundary', 'lift': 'Lift Chart', 'gain': 'Gain Chart', 'tree': 'Decision Tree'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=simple, iterative_imputation_iters=5, categorical_features=['job', 'marital', 'education', 'housing', 'loan', 'contact', 'month', 'day_of_week', 'poutcome'], categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=['age', 'duration', 'campaign', 'emp.var.rate', 'cons.price.idx', 'cons.conf.idx', 'euribor3m', 'nr.employed'], numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=True, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=False, outliers_threshold=0.05, remove_multicollinearity=True, multicollinearity_threshold=0.95, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=True, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=True, fold_strategy=stratifiedkfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=234, log_experiment=False, experiment_name=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2021-05-15 09:27:28,766:INFO:Checking environment
+2021-05-15 09:27:28,766:INFO:python_version: 3.8.8
+2021-05-15 09:27:28,766:INFO:python_build: ('default', 'Apr 13 2021 15:08:03')
+2021-05-15 09:27:28,766:INFO:machine: AMD64
+2021-05-15 09:27:28,766:INFO:platform: Windows-10-10.0.19041-SP0
+2021-05-15 09:27:28,766:INFO:Memory: svmem(total=34109853696, available=16694849536, percent=51.1, used=17415004160, free=16694849536)
+2021-05-15 09:27:28,766:INFO:Physical Core: 6
+2021-05-15 09:27:28,766:INFO:Logical Core: 12
+2021-05-15 09:27:28,767:INFO:Checking libraries
+2021-05-15 09:27:28,767:INFO:pd==1.2.4
+2021-05-15 09:27:28,767:INFO:numpy==1.19.2
+2021-05-15 09:27:28,767:INFO:sklearn==0.23.2
+2021-05-15 09:27:28,767:INFO:lightgbm==3.2.1
+2021-05-15 09:27:28,780:INFO:catboost==0.25.1
+2021-05-15 09:27:28,859:INFO:xgboost==1.4.1
+2021-05-15 09:27:29,247:INFO:mlflow==1.15.0
+2021-05-15 09:27:29,248:INFO:Checking Exceptions
+2021-05-15 09:27:29,248:INFO:Declaring global variables
+2021-05-15 09:27:29,248:INFO:USI: 2eac
+2021-05-15 09:27:29,248:INFO:pycaret_globals: {'transform_target_method_param', 'html_param', 'fold_shuffle_param', 'logging_param', 'imputation_regressor', 'pycaret_globals', 'seed', 'display_container', 'USI', 'imputation_classifier', 'log_plots_param', '_available_plots', 'target_param', 'iterative_imputation_iters_param', 'fix_imbalance_method_param', 'X_train', 'gpu_param', '_all_models', '_all_models_internal', 'y_test', 'X_test', 'X', 'stratify_param', 'fold_generator', 'fold_param', '_gpu_n_jobs_param', 'y', '_internal_pipeline', 'experiment__', 'transform_target_param', 'data_before_preprocess', 'prep_pipe', 'exp_name_log', '_ml_usecase', '_all_metrics', 'y_train', 'master_model_container', 'fix_imbalance_param', 'fold_groups_param', 'create_model_container', 'n_jobs_param'}
+2021-05-15 09:27:29,248:INFO:Preparing display monitor
+2021-05-15 09:27:29,248:INFO:Preparing display monitor
+2021-05-15 09:27:29,258:INFO:Importing libraries
+2021-05-15 09:27:29,258:INFO:Copying data for preprocessing
+2021-05-15 09:27:29,268:INFO:Declaring preprocessing parameters
+2021-05-15 09:27:29,272:INFO:Creating preprocessing pipeline
+2021-05-15 09:27:29,299:INFO:Preprocessing pipeline created successfully
+2021-05-15 09:27:29,299:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2021-05-15 09:27:29,299:INFO:Creating global containers
+2021-05-15 09:27:29,300:INFO:Internal pipeline: Pipeline(memory=None,
+         steps=[('fix_imbalance',
+                 SMOTE(k_neighbors=5, n_jobs=None, random_state=234,
+                       sampling_strategy='auto'))],
+         verbose=False)
+2021-05-15 09:27:32,501:INFO:Creating grid variables
+2021-05-15 09:27:32,521:INFO:create_model_container: 0
+2021-05-15 09:27:32,521:INFO:master_model_container: 0
+2021-05-15 09:27:32,521:INFO:display_container: 1
+2021-05-15 09:27:32,526:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['job', 'marital',
+                                                            'education',
+                                                            'housing', 'loan',
+                                                            'contact', 'month',
+                                                            'day_of_week',
+                                                            'poutcome'],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=['age', 'duration',
+                                                          'campaign',
+                                                          'emp.var.rate',
+                                                          'cons.price.idx',
+                                                          'cons.conf.idx',
+                                                          'eur...
+                ('cluster_all', 'passthrough'), ('dummy', Dummify(target='y')),
+                ('fix_perfect', Remove_100(target='y')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'),
+                ('fix_multi',
+                 Fix_multicollinearity(correlation_with_target_preference=None,
+                                       correlation_with_target_threshold=0.0,
+                                       target_variable='y', threshold=0.95)),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False)
+2021-05-15 09:27:32,526:INFO:setup() succesfully completed......................................
+2021-05-15 09:27:32,596:INFO:Initializing compare_models()
+2021-05-15 09:27:32,596:INFO:compare_models(include=None, fold=None, round=4, cross_validation=True, sort=AUC, n_select=5, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, verbose=True, display=None, exclude=None)
+2021-05-15 09:27:32,596:INFO:Checking exceptions
+2021-05-15 09:27:32,597:INFO:Preparing display monitor
+2021-05-15 09:27:32,597:INFO:Preparing display monitor
+2021-05-15 09:27:32,621:INFO:Initializing Logistic Regression
+2021-05-15 09:27:32,621:INFO:Total runtime is 0.0 minutes
+2021-05-15 09:27:32,629:INFO:SubProcess create_model() called ==================================
+2021-05-15 09:27:32,630:INFO:Initializing create_model()
+2021-05-15 09:27:32,630:INFO:create_model(estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x0000019010F3BD90>, kwargs={})
+2021-05-15 09:27:32,630:INFO:Checking exceptions
+2021-05-15 09:27:32,630:INFO:Importing libraries
+2021-05-15 09:27:32,630:INFO:Copying training dataset
+2021-05-15 09:27:32,631:INFO:Defining folds
+2021-05-15 09:27:32,632:INFO:Declaring metric variables
+2021-05-15 09:27:32,638:INFO:Importing untrained model
+2021-05-15 09:27:32,645:INFO:Logistic Regression Imported succesfully
+2021-05-15 09:27:32,659:INFO:Starting cross validation
+2021-05-15 09:27:32,660:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:27:37,202:INFO:Calculating mean and std
+2021-05-15 09:27:37,204:INFO:Creating metrics dataframe
+2021-05-15 09:27:37,210:INFO:Uploading results into container
+2021-05-15 09:27:37,210:INFO:Uploading model into container now
+2021-05-15 09:27:37,210:INFO:create_model_container: 1
+2021-05-15 09:27:37,210:INFO:master_model_container: 1
+2021-05-15 09:27:37,210:INFO:display_container: 2
+2021-05-15 09:27:37,210:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=234, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2021-05-15 09:27:37,211:INFO:create_model() succesfully completed......................................
+2021-05-15 09:27:37,271:INFO:SubProcess create_model() end ==================================
+2021-05-15 09:27:37,271:INFO:Creating metrics dataframe
+2021-05-15 09:27:37,284:INFO:Initializing K Neighbors Classifier
+2021-05-15 09:27:37,284:INFO:Total runtime is 0.07770819266637166 minutes
+2021-05-15 09:27:37,290:INFO:SubProcess create_model() called ==================================
+2021-05-15 09:27:37,290:INFO:Initializing create_model()
+2021-05-15 09:27:37,290:INFO:create_model(estimator=knn, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x0000019010F3BD90>, kwargs={})
+2021-05-15 09:27:37,291:INFO:Checking exceptions
+2021-05-15 09:27:37,291:INFO:Importing libraries
+2021-05-15 09:27:37,291:INFO:Copying training dataset
+2021-05-15 09:27:37,293:INFO:Defining folds
+2021-05-15 09:27:37,293:INFO:Declaring metric variables
+2021-05-15 09:27:37,299:INFO:Importing untrained model
+2021-05-15 09:27:37,305:INFO:K Neighbors Classifier Imported succesfully
+2021-05-15 09:27:37,319:INFO:Starting cross validation
+2021-05-15 09:27:37,320:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:27:41,117:INFO:Calculating mean and std
+2021-05-15 09:27:41,119:INFO:Creating metrics dataframe
+2021-05-15 09:27:41,124:INFO:Uploading results into container
+2021-05-15 09:27:41,124:INFO:Uploading model into container now
+2021-05-15 09:27:41,124:INFO:create_model_container: 2
+2021-05-15 09:27:41,124:INFO:master_model_container: 2
+2021-05-15 09:27:41,124:INFO:display_container: 2
+2021-05-15 09:27:41,124:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2021-05-15 09:27:41,124:INFO:create_model() succesfully completed......................................
+2021-05-15 09:27:41,183:INFO:SubProcess create_model() end ==================================
+2021-05-15 09:27:41,183:INFO:Creating metrics dataframe
+2021-05-15 09:27:41,200:INFO:Initializing Naive Bayes
+2021-05-15 09:27:41,200:INFO:Total runtime is 0.1429819345474243 minutes
+2021-05-15 09:27:41,207:INFO:SubProcess create_model() called ==================================
+2021-05-15 09:27:41,207:INFO:Initializing create_model()
+2021-05-15 09:27:41,207:INFO:create_model(estimator=nb, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x0000019010F3BD90>, kwargs={})
+2021-05-15 09:27:41,207:INFO:Checking exceptions
+2021-05-15 09:27:41,208:INFO:Importing libraries
+2021-05-15 09:27:41,208:INFO:Copying training dataset
+2021-05-15 09:27:41,209:INFO:Defining folds
+2021-05-15 09:27:41,209:INFO:Declaring metric variables
+2021-05-15 09:27:41,215:INFO:Importing untrained model
+2021-05-15 09:27:41,222:INFO:Naive Bayes Imported succesfully
+2021-05-15 09:27:41,237:INFO:Starting cross validation
+2021-05-15 09:27:41,238:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:27:41,567:INFO:Calculating mean and std
+2021-05-15 09:27:41,568:INFO:Creating metrics dataframe
+2021-05-15 09:27:41,572:INFO:Uploading results into container
+2021-05-15 09:27:41,572:INFO:Uploading model into container now
+2021-05-15 09:27:41,572:INFO:create_model_container: 3
+2021-05-15 09:27:41,572:INFO:master_model_container: 3
+2021-05-15 09:27:41,572:INFO:display_container: 2
+2021-05-15 09:27:41,573:INFO:GaussianNB(priors=None, var_smoothing=1e-09)
+2021-05-15 09:27:41,573:INFO:create_model() succesfully completed......................................
+2021-05-15 09:27:41,629:INFO:SubProcess create_model() end ==================================
+2021-05-15 09:27:41,630:INFO:Creating metrics dataframe
+2021-05-15 09:27:41,642:INFO:Initializing Decision Tree Classifier
+2021-05-15 09:27:41,642:INFO:Total runtime is 0.15035595496495563 minutes
+2021-05-15 09:27:41,650:INFO:SubProcess create_model() called ==================================
+2021-05-15 09:27:41,651:INFO:Initializing create_model()
+2021-05-15 09:27:41,651:INFO:create_model(estimator=dt, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x0000019010F3BD90>, kwargs={})
+2021-05-15 09:27:41,651:INFO:Checking exceptions
+2021-05-15 09:27:41,651:INFO:Importing libraries
+2021-05-15 09:27:41,651:INFO:Copying training dataset
+2021-05-15 09:27:41,652:INFO:Defining folds
+2021-05-15 09:27:41,653:INFO:Declaring metric variables
+2021-05-15 09:27:41,659:INFO:Importing untrained model
+2021-05-15 09:27:41,666:INFO:Decision Tree Classifier Imported succesfully
+2021-05-15 09:27:41,681:INFO:Starting cross validation
+2021-05-15 09:27:41,682:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:27:42,354:INFO:Calculating mean and std
+2021-05-15 09:27:42,355:INFO:Creating metrics dataframe
+2021-05-15 09:27:42,361:INFO:Uploading results into container
+2021-05-15 09:27:42,361:INFO:Uploading model into container now
+2021-05-15 09:27:42,361:INFO:create_model_container: 4
+2021-05-15 09:27:42,361:INFO:master_model_container: 4
+2021-05-15 09:27:42,361:INFO:display_container: 2
+2021-05-15 09:27:42,362:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, presort='deprecated',
+                       random_state=234, splitter='best')
+2021-05-15 09:27:42,362:INFO:create_model() succesfully completed......................................
+2021-05-15 09:27:42,442:INFO:SubProcess create_model() end ==================================
+2021-05-15 09:27:42,442:INFO:Creating metrics dataframe
+2021-05-15 09:27:42,459:INFO:Initializing SVM - Linear Kernel
+2021-05-15 09:27:42,459:INFO:Total runtime is 0.16396469672520952 minutes
+2021-05-15 09:27:42,467:INFO:SubProcess create_model() called ==================================
+2021-05-15 09:27:42,467:INFO:Initializing create_model()
+2021-05-15 09:27:42,467:INFO:create_model(estimator=svm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x0000019010F3BD90>, kwargs={})
+2021-05-15 09:27:42,467:INFO:Checking exceptions
+2021-05-15 09:27:42,467:INFO:Importing libraries
+2021-05-15 09:27:42,467:INFO:Copying training dataset
+2021-05-15 09:27:42,469:INFO:Defining folds
+2021-05-15 09:27:42,469:INFO:Declaring metric variables
+2021-05-15 09:27:42,475:INFO:Importing untrained model
+2021-05-15 09:27:42,482:INFO:SVM - Linear Kernel Imported succesfully
+2021-05-15 09:27:42,496:INFO:Starting cross validation
+2021-05-15 09:27:42,497:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:27:43,074:INFO:Calculating mean and std
+2021-05-15 09:27:43,076:INFO:Creating metrics dataframe
+2021-05-15 09:27:43,083:INFO:Uploading results into container
+2021-05-15 09:27:43,083:INFO:Uploading model into container now
+2021-05-15 09:27:43,083:INFO:create_model_container: 5
+2021-05-15 09:27:43,083:INFO:master_model_container: 5
+2021-05-15 09:27:43,083:INFO:display_container: 2
+2021-05-15 09:27:43,084:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=234, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2021-05-15 09:27:43,084:INFO:create_model() succesfully completed......................................
+2021-05-15 09:27:43,197:INFO:SubProcess create_model() end ==================================
+2021-05-15 09:27:43,197:INFO:Creating metrics dataframe
+2021-05-15 09:27:43,212:INFO:Initializing Ridge Classifier
+2021-05-15 09:27:43,212:INFO:Total runtime is 0.17651155392328896 minutes
+2021-05-15 09:27:43,219:INFO:SubProcess create_model() called ==================================
+2021-05-15 09:27:43,219:INFO:Initializing create_model()
+2021-05-15 09:27:43,219:INFO:create_model(estimator=ridge, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x0000019010F3BD90>, kwargs={})
+2021-05-15 09:27:43,220:INFO:Checking exceptions
+2021-05-15 09:27:43,220:INFO:Importing libraries
+2021-05-15 09:27:43,220:INFO:Copying training dataset
+2021-05-15 09:27:43,221:INFO:Defining folds
+2021-05-15 09:27:43,221:INFO:Declaring metric variables
+2021-05-15 09:27:43,227:INFO:Importing untrained model
+2021-05-15 09:27:43,234:INFO:Ridge Classifier Imported succesfully
+2021-05-15 09:27:43,248:INFO:Starting cross validation
+2021-05-15 09:27:43,249:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:27:43,562:INFO:Calculating mean and std
+2021-05-15 09:27:43,563:INFO:Creating metrics dataframe
+2021-05-15 09:27:43,570:INFO:Uploading results into container
+2021-05-15 09:27:43,570:INFO:Uploading model into container now
+2021-05-15 09:27:43,570:INFO:create_model_container: 6
+2021-05-15 09:27:43,570:INFO:master_model_container: 6
+2021-05-15 09:27:43,570:INFO:display_container: 2
+2021-05-15 09:27:43,571:INFO:RidgeClassifier(alpha=1.0, class_weight=None, copy_X=True, fit_intercept=True,
+                max_iter=None, normalize=False, random_state=234, solver='auto',
+                tol=0.001)
+2021-05-15 09:27:43,571:INFO:create_model() succesfully completed......................................
+2021-05-15 09:27:43,652:INFO:SubProcess create_model() end ==================================
+2021-05-15 09:27:43,652:INFO:Creating metrics dataframe
+2021-05-15 09:27:43,669:INFO:Initializing Random Forest Classifier
+2021-05-15 09:27:43,669:INFO:Total runtime is 0.18413877089818317 minutes
+2021-05-15 09:27:43,677:INFO:SubProcess create_model() called ==================================
+2021-05-15 09:27:43,677:INFO:Initializing create_model()
+2021-05-15 09:27:43,677:INFO:create_model(estimator=rf, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x0000019010F3BD90>, kwargs={})
+2021-05-15 09:27:43,677:INFO:Checking exceptions
+2021-05-15 09:27:43,678:INFO:Importing libraries
+2021-05-15 09:27:43,678:INFO:Copying training dataset
+2021-05-15 09:27:43,679:INFO:Defining folds
+2021-05-15 09:27:43,679:INFO:Declaring metric variables
+2021-05-15 09:27:43,685:INFO:Importing untrained model
+2021-05-15 09:27:43,693:INFO:Random Forest Classifier Imported succesfully
+2021-05-15 09:27:43,707:INFO:Starting cross validation
+2021-05-15 09:27:43,708:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:27:47,711:INFO:Calculating mean and std
+2021-05-15 09:27:47,712:INFO:Creating metrics dataframe
+2021-05-15 09:27:47,719:INFO:Uploading results into container
+2021-05-15 09:27:47,719:INFO:Uploading model into container now
+2021-05-15 09:27:47,719:INFO:create_model_container: 7
+2021-05-15 09:27:47,719:INFO:master_model_container: 7
+2021-05-15 09:27:47,719:INFO:display_container: 2
+2021-05-15 09:27:47,720:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=100,
+                       n_jobs=-1, oob_score=False, random_state=234, verbose=0,
+                       warm_start=False)
+2021-05-15 09:27:47,720:INFO:create_model() succesfully completed......................................
+2021-05-15 09:27:47,776:INFO:SubProcess create_model() end ==================================
+2021-05-15 09:27:47,776:INFO:Creating metrics dataframe
+2021-05-15 09:27:47,791:INFO:Initializing Quadratic Discriminant Analysis
+2021-05-15 09:27:47,791:INFO:Total runtime is 0.25283243258794147 minutes
+2021-05-15 09:27:47,797:INFO:SubProcess create_model() called ==================================
+2021-05-15 09:27:47,797:INFO:Initializing create_model()
+2021-05-15 09:27:47,798:INFO:create_model(estimator=qda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x0000019010F3BD90>, kwargs={})
+2021-05-15 09:27:47,798:INFO:Checking exceptions
+2021-05-15 09:27:47,798:INFO:Importing libraries
+2021-05-15 09:27:47,798:INFO:Copying training dataset
+2021-05-15 09:27:47,799:INFO:Defining folds
+2021-05-15 09:27:47,799:INFO:Declaring metric variables
+2021-05-15 09:27:47,805:INFO:Importing untrained model
+2021-05-15 09:27:47,812:INFO:Quadratic Discriminant Analysis Imported succesfully
+2021-05-15 09:27:47,826:INFO:Starting cross validation
+2021-05-15 09:27:47,827:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:27:48,306:INFO:Calculating mean and std
+2021-05-15 09:27:48,307:INFO:Creating metrics dataframe
+2021-05-15 09:27:48,314:INFO:Uploading results into container
+2021-05-15 09:27:48,314:INFO:Uploading model into container now
+2021-05-15 09:27:48,314:INFO:create_model_container: 8
+2021-05-15 09:27:48,314:INFO:master_model_container: 8
+2021-05-15 09:27:48,314:INFO:display_container: 2
+2021-05-15 09:27:48,315:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2021-05-15 09:27:48,315:INFO:create_model() succesfully completed......................................
+2021-05-15 09:27:48,393:INFO:SubProcess create_model() end ==================================
+2021-05-15 09:27:48,393:INFO:Creating metrics dataframe
+2021-05-15 09:27:48,413:INFO:Initializing Ada Boost Classifier
+2021-05-15 09:27:48,413:INFO:Total runtime is 0.26319235960642495 minutes
+2021-05-15 09:27:48,420:INFO:SubProcess create_model() called ==================================
+2021-05-15 09:27:48,421:INFO:Initializing create_model()
+2021-05-15 09:27:48,421:INFO:create_model(estimator=ada, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x0000019010F3BD90>, kwargs={})
+2021-05-15 09:27:48,421:INFO:Checking exceptions
+2021-05-15 09:27:48,421:INFO:Importing libraries
+2021-05-15 09:27:48,421:INFO:Copying training dataset
+2021-05-15 09:27:48,422:INFO:Defining folds
+2021-05-15 09:27:48,422:INFO:Declaring metric variables
+2021-05-15 09:27:48,429:INFO:Importing untrained model
+2021-05-15 09:27:48,436:INFO:Ada Boost Classifier Imported succesfully
+2021-05-15 09:27:48,449:INFO:Starting cross validation
+2021-05-15 09:27:48,449:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:27:50,714:INFO:Calculating mean and std
+2021-05-15 09:27:50,715:INFO:Creating metrics dataframe
+2021-05-15 09:27:50,721:INFO:Uploading results into container
+2021-05-15 09:27:50,721:INFO:Uploading model into container now
+2021-05-15 09:27:50,721:INFO:create_model_container: 9
+2021-05-15 09:27:50,721:INFO:master_model_container: 9
+2021-05-15 09:27:50,721:INFO:display_container: 2
+2021-05-15 09:27:50,722:INFO:AdaBoostClassifier(algorithm='SAMME.R', base_estimator=None, learning_rate=1.0,
+                   n_estimators=50, random_state=234)
+2021-05-15 09:27:50,722:INFO:create_model() succesfully completed......................................
+2021-05-15 09:27:50,776:INFO:SubProcess create_model() end ==================================
+2021-05-15 09:27:50,776:INFO:Creating metrics dataframe
+2021-05-15 09:27:50,795:INFO:Initializing Gradient Boosting Classifier
+2021-05-15 09:27:50,795:INFO:Total runtime is 0.3029027024904887 minutes
+2021-05-15 09:27:50,802:INFO:SubProcess create_model() called ==================================
+2021-05-15 09:27:50,803:INFO:Initializing create_model()
+2021-05-15 09:27:50,803:INFO:create_model(estimator=gbc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x0000019010F3BD90>, kwargs={})
+2021-05-15 09:27:50,803:INFO:Checking exceptions
+2021-05-15 09:27:50,803:INFO:Importing libraries
+2021-05-15 09:27:50,803:INFO:Copying training dataset
+2021-05-15 09:27:50,804:INFO:Defining folds
+2021-05-15 09:27:50,804:INFO:Declaring metric variables
+2021-05-15 09:27:50,811:INFO:Importing untrained model
+2021-05-15 09:27:50,818:INFO:Gradient Boosting Classifier Imported succesfully
+2021-05-15 09:27:50,833:INFO:Starting cross validation
+2021-05-15 09:27:50,833:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:27:59,244:INFO:Calculating mean and std
+2021-05-15 09:27:59,246:INFO:Creating metrics dataframe
+2021-05-15 09:27:59,252:INFO:Uploading results into container
+2021-05-15 09:27:59,252:INFO:Uploading model into container now
+2021-05-15 09:27:59,252:INFO:create_model_container: 10
+2021-05-15 09:27:59,252:INFO:master_model_container: 10
+2021-05-15 09:27:59,252:INFO:display_container: 2
+2021-05-15 09:27:59,253:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='deviance', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_impurity_split=None,
+                           min_samples_leaf=1, min_samples_split=2,
+                           min_weight_fraction_leaf=0.0, n_estimators=100,
+                           n_iter_no_change=None, presort='deprecated',
+                           random_state=234, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2021-05-15 09:27:59,253:INFO:create_model() succesfully completed......................................
+2021-05-15 09:27:59,313:INFO:SubProcess create_model() end ==================================
+2021-05-15 09:27:59,313:INFO:Creating metrics dataframe
+2021-05-15 09:27:59,333:INFO:Initializing Linear Discriminant Analysis
+2021-05-15 09:27:59,333:INFO:Total runtime is 0.44519494374593094 minutes
+2021-05-15 09:27:59,341:INFO:SubProcess create_model() called ==================================
+2021-05-15 09:27:59,341:INFO:Initializing create_model()
+2021-05-15 09:27:59,342:INFO:create_model(estimator=lda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x0000019010F3BD90>, kwargs={})
+2021-05-15 09:27:59,342:INFO:Checking exceptions
+2021-05-15 09:27:59,342:INFO:Importing libraries
+2021-05-15 09:27:59,342:INFO:Copying training dataset
+2021-05-15 09:27:59,343:INFO:Defining folds
+2021-05-15 09:27:59,343:INFO:Declaring metric variables
+2021-05-15 09:27:59,350:INFO:Importing untrained model
+2021-05-15 09:27:59,358:INFO:Linear Discriminant Analysis Imported succesfully
+2021-05-15 09:27:59,371:INFO:Starting cross validation
+2021-05-15 09:27:59,372:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:28:00,058:INFO:Calculating mean and std
+2021-05-15 09:28:00,059:INFO:Creating metrics dataframe
+2021-05-15 09:28:00,063:INFO:Uploading results into container
+2021-05-15 09:28:00,063:INFO:Uploading model into container now
+2021-05-15 09:28:00,063:INFO:create_model_container: 11
+2021-05-15 09:28:00,063:INFO:master_model_container: 11
+2021-05-15 09:28:00,063:INFO:display_container: 2
+2021-05-15 09:28:00,064:INFO:LinearDiscriminantAnalysis(n_components=None, priors=None, shrinkage=None,
+                           solver='svd', store_covariance=False, tol=0.0001)
+2021-05-15 09:28:00,064:INFO:create_model() succesfully completed......................................
+2021-05-15 09:28:00,120:INFO:SubProcess create_model() end ==================================
+2021-05-15 09:28:00,120:INFO:Creating metrics dataframe
+2021-05-15 09:28:00,136:INFO:Initializing Extra Trees Classifier
+2021-05-15 09:28:00,136:INFO:Total runtime is 0.4585747679074605 minutes
+2021-05-15 09:28:00,143:INFO:SubProcess create_model() called ==================================
+2021-05-15 09:28:00,143:INFO:Initializing create_model()
+2021-05-15 09:28:00,143:INFO:create_model(estimator=et, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x0000019010F3BD90>, kwargs={})
+2021-05-15 09:28:00,143:INFO:Checking exceptions
+2021-05-15 09:28:00,143:INFO:Importing libraries
+2021-05-15 09:28:00,143:INFO:Copying training dataset
+2021-05-15 09:28:00,145:INFO:Defining folds
+2021-05-15 09:28:00,145:INFO:Declaring metric variables
+2021-05-15 09:28:00,152:INFO:Importing untrained model
+2021-05-15 09:28:00,158:INFO:Extra Trees Classifier Imported succesfully
+2021-05-15 09:28:00,173:INFO:Starting cross validation
+2021-05-15 09:28:00,174:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:28:04,371:INFO:Calculating mean and std
+2021-05-15 09:28:04,373:INFO:Creating metrics dataframe
+2021-05-15 09:28:04,378:INFO:Uploading results into container
+2021-05-15 09:28:04,378:INFO:Uploading model into container now
+2021-05-15 09:28:04,378:INFO:create_model_container: 12
+2021-05-15 09:28:04,378:INFO:master_model_container: 12
+2021-05-15 09:28:04,378:INFO:display_container: 2
+2021-05-15 09:28:04,379:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='auto',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_impurity_split=None,
+                     min_samples_leaf=1, min_samples_split=2,
+                     min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=234, verbose=0,
+                     warm_start=False)
+2021-05-15 09:28:04,379:INFO:create_model() succesfully completed......................................
+2021-05-15 09:28:04,437:INFO:SubProcess create_model() end ==================================
+2021-05-15 09:28:04,437:INFO:Creating metrics dataframe
+2021-05-15 09:28:04,453:INFO:Initializing Extreme Gradient Boosting
+2021-05-15 09:28:04,454:INFO:Total runtime is 0.5305440704027812 minutes
+2021-05-15 09:28:04,460:INFO:SubProcess create_model() called ==================================
+2021-05-15 09:28:04,460:INFO:Initializing create_model()
+2021-05-15 09:28:04,460:INFO:create_model(estimator=xgboost, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x0000019010F3BD90>, kwargs={})
+2021-05-15 09:28:04,460:INFO:Checking exceptions
+2021-05-15 09:28:04,460:INFO:Importing libraries
+2021-05-15 09:28:04,460:INFO:Copying training dataset
+2021-05-15 09:28:04,461:INFO:Defining folds
+2021-05-15 09:28:04,462:INFO:Declaring metric variables
+2021-05-15 09:28:04,467:INFO:Importing untrained model
+2021-05-15 09:28:04,474:INFO:Extreme Gradient Boosting Imported succesfully
+2021-05-15 09:28:04,486:INFO:Starting cross validation
+2021-05-15 09:28:04,488:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:28:16,592:INFO:Calculating mean and std
+2021-05-15 09:28:16,593:INFO:Creating metrics dataframe
+2021-05-15 09:28:16,599:INFO:Uploading results into container
+2021-05-15 09:28:16,599:INFO:Uploading model into container now
+2021-05-15 09:28:16,599:INFO:create_model_container: 13
+2021-05-15 09:28:16,599:INFO:master_model_container: 13
+2021-05-15 09:28:16,599:INFO:display_container: 2
+2021-05-15 09:28:16,600:INFO:XGBClassifier(base_score=None, booster='gbtree', colsample_bylevel=None,
+              colsample_bynode=None, colsample_bytree=None, gamma=None,
+              gpu_id=None, importance_type='gain', interaction_constraints=None,
+              learning_rate=None, max_delta_step=None, max_depth=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              n_estimators=100, n_jobs=-1, num_parallel_tree=None,
+              objective='binary:logistic', random_state=234, reg_alpha=None,
+              reg_lambda=None, scale_pos_weight=None, subsample=None,
+              tree_method='auto', use_label_encoder=True,
+              validate_parameters=None, verbosity=0)
+2021-05-15 09:28:16,600:INFO:create_model() succesfully completed......................................
+2021-05-15 09:28:16,659:INFO:SubProcess create_model() end ==================================
+2021-05-15 09:28:16,659:INFO:Creating metrics dataframe
+2021-05-15 09:28:16,676:INFO:Initializing Light Gradient Boosting Machine
+2021-05-15 09:28:16,676:INFO:Total runtime is 0.7342478553454082 minutes
+2021-05-15 09:28:16,682:INFO:SubProcess create_model() called ==================================
+2021-05-15 09:28:16,682:INFO:Initializing create_model()
+2021-05-15 09:28:16,682:INFO:create_model(estimator=lightgbm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x0000019010F3BD90>, kwargs={})
+2021-05-15 09:28:16,682:INFO:Checking exceptions
+2021-05-15 09:28:16,682:INFO:Importing libraries
+2021-05-15 09:28:16,682:INFO:Copying training dataset
+2021-05-15 09:28:16,684:INFO:Defining folds
+2021-05-15 09:28:16,684:INFO:Declaring metric variables
+2021-05-15 09:28:16,689:INFO:Importing untrained model
+2021-05-15 09:28:16,695:INFO:Light Gradient Boosting Machine Imported succesfully
+2021-05-15 09:28:16,709:INFO:Starting cross validation
+2021-05-15 09:28:16,710:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:28:18,763:INFO:Calculating mean and std
+2021-05-15 09:28:18,764:INFO:Creating metrics dataframe
+2021-05-15 09:28:18,767:INFO:Uploading results into container
+2021-05-15 09:28:18,767:INFO:Uploading model into container now
+2021-05-15 09:28:18,767:INFO:create_model_container: 14
+2021-05-15 09:28:18,767:INFO:master_model_container: 14
+2021-05-15 09:28:18,767:INFO:display_container: 2
+2021-05-15 09:28:18,768:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=234, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2021-05-15 09:28:18,768:INFO:create_model() succesfully completed......................................
+2021-05-15 09:28:18,825:INFO:SubProcess create_model() end ==================================
+2021-05-15 09:28:18,825:INFO:Creating metrics dataframe
+2021-05-15 09:28:18,843:INFO:Initializing CatBoost Classifier
+2021-05-15 09:28:18,844:INFO:Total runtime is 0.7703851222991943 minutes
+2021-05-15 09:28:18,849:INFO:SubProcess create_model() called ==================================
+2021-05-15 09:28:18,849:INFO:Initializing create_model()
+2021-05-15 09:28:18,849:INFO:create_model(estimator=catboost, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, verbose=False, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x0000019010F3BD90>, kwargs={})
+2021-05-15 09:28:18,849:INFO:Checking exceptions
+2021-05-15 09:28:18,850:INFO:Importing libraries
+2021-05-15 09:28:18,850:INFO:Copying training dataset
+2021-05-15 09:28:18,851:INFO:Defining folds
+2021-05-15 09:28:18,851:INFO:Declaring metric variables
+2021-05-15 09:28:18,856:INFO:Importing untrained model
+2021-05-15 09:28:18,862:INFO:CatBoost Classifier Imported succesfully
+2021-05-15 09:28:18,874:INFO:Starting cross validation
+2021-05-15 09:28:18,875:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:29:15,869:INFO:Calculating mean and std
+2021-05-15 09:29:15,871:INFO:Creating metrics dataframe
+2021-05-15 09:29:15,877:INFO:Uploading results into container
+2021-05-15 09:29:15,877:INFO:Uploading model into container now
+2021-05-15 09:29:15,877:INFO:create_model_container: 15
+2021-05-15 09:29:15,877:INFO:master_model_container: 15
+2021-05-15 09:29:15,877:INFO:display_container: 2
+2021-05-15 09:29:15,877:INFO:<catboost.core.CatBoostClassifier object at 0x000001901422B550>
+2021-05-15 09:29:15,877:INFO:create_model() succesfully completed......................................
+2021-05-15 09:29:15,973:INFO:SubProcess create_model() end ==================================
+2021-05-15 09:29:15,973:INFO:Creating metrics dataframe
+2021-05-15 09:29:16,007:INFO:Initializing create_model()
+2021-05-15 09:29:16,007:INFO:create_model(estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=234, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, verbose=False, system=False, metrics=None, display=None, kwargs={})
+2021-05-15 09:29:16,007:INFO:Checking exceptions
+2021-05-15 09:29:16,008:INFO:Importing libraries
+2021-05-15 09:29:16,008:INFO:Copying training dataset
+2021-05-15 09:29:16,008:INFO:Defining folds
+2021-05-15 09:29:16,009:INFO:Declaring metric variables
+2021-05-15 09:29:16,009:INFO:Importing untrained model
+2021-05-15 09:29:16,009:INFO:Declaring custom model
+2021-05-15 09:29:16,009:INFO:Light Gradient Boosting Machine Imported succesfully
+2021-05-15 09:29:16,010:INFO:Cross validation set to False
+2021-05-15 09:29:16,010:INFO:Fitting Model
+2021-05-15 09:29:16,347:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=234, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2021-05-15 09:29:16,347:INFO:create_models() succesfully completed......................................
+2021-05-15 09:29:16,427:INFO:Initializing create_model()
+2021-05-15 09:29:16,427:INFO:create_model(estimator=<catboost.core.CatBoostClassifier object at 0x000001901422B550>, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, verbose=False, system=False, metrics=None, display=None, kwargs={})
+2021-05-15 09:29:16,427:INFO:Checking exceptions
+2021-05-15 09:29:16,427:INFO:Importing libraries
+2021-05-15 09:29:16,428:INFO:Copying training dataset
+2021-05-15 09:29:16,429:INFO:Defining folds
+2021-05-15 09:29:16,429:INFO:Declaring metric variables
+2021-05-15 09:29:16,429:INFO:Importing untrained model
+2021-05-15 09:29:16,429:INFO:Declaring custom model
+2021-05-15 09:29:16,429:INFO:CatBoost Classifier Imported succesfully
+2021-05-15 09:29:16,430:INFO:Cross validation set to False
+2021-05-15 09:29:16,430:INFO:Fitting Model
+2021-05-15 09:29:26,432:INFO:<catboost.core.CatBoostClassifier object at 0x00000190154EF550>
+2021-05-15 09:29:26,432:INFO:create_models() succesfully completed......................................
+2021-05-15 09:29:26,493:INFO:Initializing create_model()
+2021-05-15 09:29:26,493:INFO:create_model(estimator=XGBClassifier(base_score=None, booster='gbtree', colsample_bylevel=None,
+              colsample_bynode=None, colsample_bytree=None, gamma=None,
+              gpu_id=None, importance_type='gain', interaction_constraints=None,
+              learning_rate=None, max_delta_step=None, max_depth=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              n_estimators=100, n_jobs=-1, num_parallel_tree=None,
+              objective='binary:logistic', random_state=234, reg_alpha=None,
+              reg_lambda=None, scale_pos_weight=None, subsample=None,
+              tree_method='auto', use_label_encoder=True,
+              validate_parameters=None, verbosity=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, verbose=False, system=False, metrics=None, display=None, kwargs={})
+2021-05-15 09:29:26,493:INFO:Checking exceptions
+2021-05-15 09:29:26,493:INFO:Importing libraries
+2021-05-15 09:29:26,493:INFO:Copying training dataset
+2021-05-15 09:29:26,495:INFO:Defining folds
+2021-05-15 09:29:26,495:INFO:Declaring metric variables
+2021-05-15 09:29:26,495:INFO:Importing untrained model
+2021-05-15 09:29:26,495:INFO:Declaring custom model
+2021-05-15 09:29:26,496:INFO:Extreme Gradient Boosting Imported succesfully
+2021-05-15 09:29:26,497:INFO:Cross validation set to False
+2021-05-15 09:29:26,497:INFO:Fitting Model
+2021-05-15 09:29:29,139:INFO:XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1, gamma=0, gpu_id=-1,
+              importance_type='gain', interaction_constraints='',
+              learning_rate=0.300000012, max_delta_step=0, max_depth=6,
+              min_child_weight=1, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=-1, num_parallel_tree=1,
+              objective='binary:logistic', random_state=234, reg_alpha=0,
+              reg_lambda=1, scale_pos_weight=1, subsample=1, tree_method='auto',
+              use_label_encoder=True, validate_parameters=1, verbosity=0)
+2021-05-15 09:29:29,139:INFO:create_models() succesfully completed......................................
+2021-05-15 09:29:29,202:INFO:Initializing create_model()
+2021-05-15 09:29:29,202:INFO:create_model(estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=100,
+                       n_jobs=-1, oob_score=False, random_state=234, verbose=0,
+                       warm_start=False), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, verbose=False, system=False, metrics=None, display=None, kwargs={})
+2021-05-15 09:29:29,202:INFO:Checking exceptions
+2021-05-15 09:29:29,202:INFO:Importing libraries
+2021-05-15 09:29:29,202:INFO:Copying training dataset
+2021-05-15 09:29:29,203:INFO:Defining folds
+2021-05-15 09:29:29,203:INFO:Declaring metric variables
+2021-05-15 09:29:29,204:INFO:Importing untrained model
+2021-05-15 09:29:29,204:INFO:Declaring custom model
+2021-05-15 09:29:29,204:INFO:Random Forest Classifier Imported succesfully
+2021-05-15 09:29:29,205:INFO:Cross validation set to False
+2021-05-15 09:29:29,205:INFO:Fitting Model
+2021-05-15 09:29:29,753:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=100,
+                       n_jobs=-1, oob_score=False, random_state=234, verbose=0,
+                       warm_start=False)
+2021-05-15 09:29:29,753:INFO:create_models() succesfully completed......................................
+2021-05-15 09:29:29,813:INFO:Initializing create_model()
+2021-05-15 09:29:29,813:INFO:create_model(estimator=GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='deviance', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_impurity_split=None,
+                           min_samples_leaf=1, min_samples_split=2,
+                           min_weight_fraction_leaf=0.0, n_estimators=100,
+                           n_iter_no_change=None, presort='deprecated',
+                           random_state=234, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, verbose=False, system=False, metrics=None, display=None, kwargs={})
+2021-05-15 09:29:29,813:INFO:Checking exceptions
+2021-05-15 09:29:29,814:INFO:Importing libraries
+2021-05-15 09:29:29,814:INFO:Copying training dataset
+2021-05-15 09:29:29,815:INFO:Defining folds
+2021-05-15 09:29:29,815:INFO:Declaring metric variables
+2021-05-15 09:29:29,815:INFO:Importing untrained model
+2021-05-15 09:29:29,815:INFO:Declaring custom model
+2021-05-15 09:29:29,816:INFO:Gradient Boosting Classifier Imported succesfully
+2021-05-15 09:29:29,816:INFO:Cross validation set to False
+2021-05-15 09:29:29,816:INFO:Fitting Model
+2021-05-15 09:29:35,157:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='deviance', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_impurity_split=None,
+                           min_samples_leaf=1, min_samples_split=2,
+                           min_weight_fraction_leaf=0.0, n_estimators=100,
+                           n_iter_no_change=None, presort='deprecated',
+                           random_state=234, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2021-05-15 09:29:35,157:INFO:create_models() succesfully completed......................................
+2021-05-15 09:29:35,244:INFO:create_model_container: 15
+2021-05-15 09:29:35,244:INFO:master_model_container: 15
+2021-05-15 09:29:35,244:INFO:display_container: 2
+2021-05-15 09:29:35,247:INFO:[LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=234, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), <catboost.core.CatBoostClassifier object at 0x00000190154EF550>, XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1, gamma=0, gpu_id=-1,
+              importance_type='gain', interaction_constraints='',
+              learning_rate=0.300000012, max_delta_step=0, max_depth=6,
+              min_child_weight=1, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=-1, num_parallel_tree=1,
+              objective='binary:logistic', random_state=234, reg_alpha=0,
+              reg_lambda=1, scale_pos_weight=1, subsample=1, tree_method='auto',
+              use_label_encoder=True, validate_parameters=1, verbosity=0), RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=100,
+                       n_jobs=-1, oob_score=False, random_state=234, verbose=0,
+                       warm_start=False), GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='deviance', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_impurity_split=None,
+                           min_samples_leaf=1, min_samples_split=2,
+                           min_weight_fraction_leaf=0.0, n_estimators=100,
+                           n_iter_no_change=None, presort='deprecated',
+                           random_state=234, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)]
+2021-05-15 09:29:35,247:INFO:compare_models() succesfully completed......................................
+2021-05-15 09:29:35,258:INFO:Initializing create_model()
+2021-05-15 09:29:35,258:INFO:create_model(estimator=lightgbm, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, verbose=True, system=True, metrics=None, display=None, kwargs={})
+2021-05-15 09:29:35,258:INFO:Checking exceptions
+2021-05-15 09:29:35,258:INFO:Preparing display monitor
+2021-05-15 09:29:35,275:INFO:Importing libraries
+2021-05-15 09:29:35,275:INFO:Copying training dataset
+2021-05-15 09:29:35,277:INFO:Defining folds
+2021-05-15 09:29:35,277:INFO:Declaring metric variables
+2021-05-15 09:29:35,284:INFO:Importing untrained model
+2021-05-15 09:29:35,290:INFO:Light Gradient Boosting Machine Imported succesfully
+2021-05-15 09:29:35,303:INFO:Starting cross validation
+2021-05-15 09:29:35,304:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:29:37,417:INFO:Calculating mean and std
+2021-05-15 09:29:37,418:INFO:Creating metrics dataframe
+2021-05-15 09:29:37,426:INFO:Finalizing model
+2021-05-15 09:29:37,744:INFO:Uploading results into container
+2021-05-15 09:29:37,745:INFO:Uploading model into container now
+2021-05-15 09:29:37,762:INFO:create_model_container: 16
+2021-05-15 09:29:37,762:INFO:master_model_container: 16
+2021-05-15 09:29:37,763:INFO:display_container: 3
+2021-05-15 09:29:37,763:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=234, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2021-05-15 09:29:37,763:INFO:create_model() succesfully completed......................................
+2021-05-15 09:29:37,874:INFO:Initializing tune_model()
+2021-05-15 09:29:37,874:INFO:tune_model(estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=234, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), fold=None, round=4, n_iter=10, custom_grid=None, optimize=AUC, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=False, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, display=None, kwargs={})
+2021-05-15 09:29:37,875:INFO:Checking exceptions
+2021-05-15 09:29:37,876:INFO:Preparing display monitor
+2021-05-15 09:29:37,889:INFO:Copying training dataset
+2021-05-15 09:29:37,890:INFO:Checking base model
+2021-05-15 09:29:37,891:INFO:Base model : Light Gradient Boosting Machine
+2021-05-15 09:29:37,899:INFO:Declaring metric variables
+2021-05-15 09:29:37,905:INFO:Defining Hyperparameters
+2021-05-15 09:29:37,969:INFO:Tuning with n_jobs=-1
+2021-05-15 09:29:37,969:INFO:Initializing RandomizedSearchCV
+2021-05-15 09:30:11,118:INFO:best_params: {'actual_estimator__reg_lambda': 0.0001, 'actual_estimator__reg_alpha': 1, 'actual_estimator__num_leaves': 40, 'actual_estimator__n_estimators': 180, 'actual_estimator__min_split_gain': 0.1, 'actual_estimator__min_child_samples': 86, 'actual_estimator__learning_rate': 0.01, 'actual_estimator__feature_fraction': 0.6, 'actual_estimator__bagging_freq': 3, 'actual_estimator__bagging_fraction': 0.4}
+2021-05-15 09:30:11,119:INFO:Hyperparameter search completed
+2021-05-15 09:30:11,120:INFO:SubProcess create_model() called ==================================
+2021-05-15 09:30:11,120:INFO:Initializing create_model()
+2021-05-15 09:30:11,121:INFO:create_model(estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=234, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, verbose=True, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x000001900E6C44F0>, kwargs={'reg_lambda': 0.0001, 'reg_alpha': 1, 'num_leaves': 40, 'n_estimators': 180, 'min_split_gain': 0.1, 'min_child_samples': 86, 'learning_rate': 0.01, 'feature_fraction': 0.6, 'bagging_freq': 3, 'bagging_fraction': 0.4})
+2021-05-15 09:30:11,121:INFO:Checking exceptions
+2021-05-15 09:30:11,121:INFO:Importing libraries
+2021-05-15 09:30:11,121:INFO:Copying training dataset
+2021-05-15 09:30:11,123:INFO:Defining folds
+2021-05-15 09:30:11,123:INFO:Declaring metric variables
+2021-05-15 09:30:11,130:INFO:Importing untrained model
+2021-05-15 09:30:11,130:INFO:Declaring custom model
+2021-05-15 09:30:11,136:INFO:Light Gradient Boosting Machine Imported succesfully
+2021-05-15 09:30:11,148:INFO:Starting cross validation
+2021-05-15 09:30:11,149:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:30:14,685:INFO:Calculating mean and std
+2021-05-15 09:30:14,687:INFO:Creating metrics dataframe
+2021-05-15 09:30:14,695:INFO:Finalizing model
+2021-05-15 09:30:15,251:INFO:Uploading results into container
+2021-05-15 09:30:15,252:INFO:Uploading model into container now
+2021-05-15 09:30:15,252:INFO:create_model_container: 17
+2021-05-15 09:30:15,252:INFO:master_model_container: 17
+2021-05-15 09:30:15,252:INFO:display_container: 4
+2021-05-15 09:30:15,253:INFO:LGBMClassifier(bagging_fraction=0.4, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.6,
+               importance_type='split', learning_rate=0.01, max_depth=-1,
+               min_child_samples=86, min_child_weight=0.001, min_split_gain=0.1,
+               n_estimators=180, n_jobs=-1, num_leaves=40, objective=None,
+               random_state=234, reg_alpha=1, reg_lambda=0.0001, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2021-05-15 09:30:15,253:INFO:create_model() succesfully completed......................................
+2021-05-15 09:30:15,330:INFO:SubProcess create_model() end ==================================
+2021-05-15 09:30:15,346:INFO:create_model_container: 17
+2021-05-15 09:30:15,346:INFO:master_model_container: 17
+2021-05-15 09:30:15,346:INFO:display_container: 4
+2021-05-15 09:30:15,347:INFO:LGBMClassifier(bagging_fraction=0.4, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.6,
+               importance_type='split', learning_rate=0.01, max_depth=-1,
+               min_child_samples=86, min_child_weight=0.001, min_split_gain=0.1,
+               n_estimators=180, n_jobs=-1, num_leaves=40, objective=None,
+               random_state=234, reg_alpha=1, reg_lambda=0.0001, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2021-05-15 09:30:15,347:INFO:tune_model() succesfully completed......................................
+2021-05-15 09:30:15,437:INFO:Initializing plot_model()
+2021-05-15 09:30:15,438:INFO:plot_model(plot=auc, fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=LGBMClassifier(bagging_fraction=0.4, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.6,
+               importance_type='split', learning_rate=0.01, max_depth=-1,
+               min_child_samples=86, min_child_weight=0.001, min_split_gain=0.1,
+               n_estimators=180, n_jobs=-1, num_leaves=40, objective=None,
+               random_state=234, reg_alpha=1, reg_lambda=0.0001, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2021-05-15 09:30:15,438:INFO:Checking exceptions
+2021-05-15 09:30:15,439:INFO:Preparing display monitor
+2021-05-15 09:30:15,443:INFO:Preloading libraries
+2021-05-15 09:30:15,455:INFO:Copying training dataset
+2021-05-15 09:30:15,457:INFO:Copying test dataset
+2021-05-15 09:30:15,457:INFO:Plot type: auc
+2021-05-15 09:30:15,497:INFO:Fitting Model
+2021-05-15 09:30:15,498:INFO:Scoring test/hold-out set
+2021-05-15 09:30:15,738:INFO:Visual Rendered Successfully
+2021-05-15 09:30:15,792:INFO:plot_model() succesfully completed......................................
+2021-05-15 09:30:15,809:INFO:Initializing plot_model()
+2021-05-15 09:30:15,810:INFO:plot_model(plot=feature, fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=LGBMClassifier(bagging_fraction=0.4, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.6,
+               importance_type='split', learning_rate=0.01, max_depth=-1,
+               min_child_samples=86, min_child_weight=0.001, min_split_gain=0.1,
+               n_estimators=180, n_jobs=-1, num_leaves=40, objective=None,
+               random_state=234, reg_alpha=1, reg_lambda=0.0001, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2021-05-15 09:30:15,810:INFO:Checking exceptions
+2021-05-15 09:30:15,812:INFO:Preparing display monitor
+2021-05-15 09:30:15,817:INFO:Preloading libraries
+2021-05-15 09:30:15,829:INFO:Copying training dataset
+2021-05-15 09:30:15,830:INFO:Copying test dataset
+2021-05-15 09:30:15,831:INFO:Plot type: feature
+2021-05-15 09:30:15,833:WARNING:No coef_ found. Trying feature_importances_
+2021-05-15 09:30:15,985:INFO:Visual Rendered Successfully
+2021-05-15 09:30:16,043:INFO:plot_model() succesfully completed......................................
+2021-05-15 09:30:16,060:INFO:Initializing plot_model()
+2021-05-15 09:30:16,061:INFO:plot_model(plot=confusion_matrix, fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=LGBMClassifier(bagging_fraction=0.4, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.6,
+               importance_type='split', learning_rate=0.01, max_depth=-1,
+               min_child_samples=86, min_child_weight=0.001, min_split_gain=0.1,
+               n_estimators=180, n_jobs=-1, num_leaves=40, objective=None,
+               random_state=234, reg_alpha=1, reg_lambda=0.0001, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2021-05-15 09:30:16,061:INFO:Checking exceptions
+2021-05-15 09:30:16,062:INFO:Preparing display monitor
+2021-05-15 09:30:16,068:INFO:Preloading libraries
+2021-05-15 09:30:16,081:INFO:Copying training dataset
+2021-05-15 09:30:16,082:INFO:Copying test dataset
+2021-05-15 09:30:16,082:INFO:Plot type: confusion_matrix
+2021-05-15 09:30:16,085:INFO:Fitting Model
+2021-05-15 09:30:16,086:INFO:Scoring test/hold-out set
+2021-05-15 09:30:16,257:INFO:Visual Rendered Successfully
+2021-05-15 09:30:16,311:INFO:plot_model() succesfully completed......................................
+2021-05-15 09:30:16,329:INFO:Initializing plot_model()
+2021-05-15 09:30:16,329:INFO:plot_model(plot=class_report, fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=LGBMClassifier(bagging_fraction=0.4, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.6,
+               importance_type='split', learning_rate=0.01, max_depth=-1,
+               min_child_samples=86, min_child_weight=0.001, min_split_gain=0.1,
+               n_estimators=180, n_jobs=-1, num_leaves=40, objective=None,
+               random_state=234, reg_alpha=1, reg_lambda=0.0001, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2021-05-15 09:30:16,330:INFO:Checking exceptions
+2021-05-15 09:30:16,332:INFO:Preparing display monitor
+2021-05-15 09:30:16,338:INFO:Preloading libraries
+2021-05-15 09:30:16,350:INFO:Copying training dataset
+2021-05-15 09:30:16,351:INFO:Copying test dataset
+2021-05-15 09:30:16,351:INFO:Plot type: class_report
+2021-05-15 09:30:16,353:INFO:Fitting Model
+2021-05-15 09:30:16,354:INFO:Scoring test/hold-out set
+2021-05-15 09:30:16,594:INFO:Visual Rendered Successfully
+2021-05-15 09:30:16,650:INFO:plot_model() succesfully completed......................................
+2021-05-15 09:30:16,655:INFO:Initializing create_model()
+2021-05-15 09:30:16,655:INFO:create_model(estimator=catboost, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, verbose=True, system=True, metrics=None, display=None, kwargs={})
+2021-05-15 09:30:16,655:INFO:Checking exceptions
+2021-05-15 09:30:16,655:INFO:Preparing display monitor
+2021-05-15 09:30:16,669:INFO:Importing libraries
+2021-05-15 09:30:16,670:INFO:Copying training dataset
+2021-05-15 09:30:16,671:INFO:Defining folds
+2021-05-15 09:30:16,671:INFO:Declaring metric variables
+2021-05-15 09:30:16,679:INFO:Importing untrained model
+2021-05-15 09:30:16,688:INFO:CatBoost Classifier Imported succesfully
+2021-05-15 09:30:16,699:INFO:Starting cross validation
+2021-05-15 09:30:16,700:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:31:13,636:INFO:Calculating mean and std
+2021-05-15 09:31:13,637:INFO:Creating metrics dataframe
+2021-05-15 09:31:13,654:INFO:Finalizing model
+2021-05-15 09:31:23,564:INFO:Uploading results into container
+2021-05-15 09:31:23,564:INFO:Uploading model into container now
+2021-05-15 09:31:23,575:INFO:create_model_container: 18
+2021-05-15 09:31:23,576:INFO:master_model_container: 18
+2021-05-15 09:31:23,576:INFO:display_container: 5
+2021-05-15 09:31:23,576:INFO:<catboost.core.CatBoostClassifier object at 0x000001901423A340>
+2021-05-15 09:31:23,576:INFO:create_model() succesfully completed......................................
+2021-05-15 09:31:23,634:INFO:Initializing create_model()
+2021-05-15 09:31:23,635:INFO:create_model(estimator=xgboost, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, verbose=True, system=True, metrics=None, display=None, kwargs={})
+2021-05-15 09:31:23,635:INFO:Checking exceptions
+2021-05-15 09:31:23,635:INFO:Preparing display monitor
+2021-05-15 09:31:23,649:INFO:Importing libraries
+2021-05-15 09:31:23,649:INFO:Copying training dataset
+2021-05-15 09:31:23,651:INFO:Defining folds
+2021-05-15 09:31:23,651:INFO:Declaring metric variables
+2021-05-15 09:31:23,657:INFO:Importing untrained model
+2021-05-15 09:31:23,663:INFO:Extreme Gradient Boosting Imported succesfully
+2021-05-15 09:31:23,676:INFO:Starting cross validation
+2021-05-15 09:31:23,677:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:31:34,717:INFO:Calculating mean and std
+2021-05-15 09:31:34,718:INFO:Creating metrics dataframe
+2021-05-15 09:31:34,726:INFO:Finalizing model
+2021-05-15 09:31:36,445:INFO:Uploading results into container
+2021-05-15 09:31:36,445:INFO:Uploading model into container now
+2021-05-15 09:31:36,458:INFO:create_model_container: 19
+2021-05-15 09:31:36,458:INFO:master_model_container: 19
+2021-05-15 09:31:36,458:INFO:display_container: 6
+2021-05-15 09:31:36,460:INFO:XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1, gamma=0, gpu_id=-1,
+              importance_type='gain', interaction_constraints='',
+              learning_rate=0.300000012, max_delta_step=0, max_depth=6,
+              min_child_weight=1, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=-1, num_parallel_tree=1,
+              objective='binary:logistic', random_state=234, reg_alpha=0,
+              reg_lambda=1, scale_pos_weight=1, subsample=1, tree_method='auto',
+              use_label_encoder=True, validate_parameters=1, verbosity=0)
+2021-05-15 09:31:36,460:INFO:create_model() succesfully completed......................................
+2021-05-15 09:31:36,524:INFO:Initializing create_model()
+2021-05-15 09:31:36,524:INFO:create_model(estimator=rf, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, verbose=True, system=True, metrics=None, display=None, kwargs={})
+2021-05-15 09:31:36,524:INFO:Checking exceptions
+2021-05-15 09:31:36,524:INFO:Preparing display monitor
+2021-05-15 09:31:36,538:INFO:Importing libraries
+2021-05-15 09:31:36,538:INFO:Copying training dataset
+2021-05-15 09:31:36,540:INFO:Defining folds
+2021-05-15 09:31:36,540:INFO:Declaring metric variables
+2021-05-15 09:31:36,547:INFO:Importing untrained model
+2021-05-15 09:31:36,553:INFO:Random Forest Classifier Imported succesfully
+2021-05-15 09:31:36,566:INFO:Starting cross validation
+2021-05-15 09:31:36,567:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:31:40,572:INFO:Calculating mean and std
+2021-05-15 09:31:40,573:INFO:Creating metrics dataframe
+2021-05-15 09:31:40,587:INFO:Finalizing model
+2021-05-15 09:31:41,120:INFO:Uploading results into container
+2021-05-15 09:31:41,121:INFO:Uploading model into container now
+2021-05-15 09:31:41,132:INFO:create_model_container: 20
+2021-05-15 09:31:41,132:INFO:master_model_container: 20
+2021-05-15 09:31:41,132:INFO:display_container: 7
+2021-05-15 09:31:41,133:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=100,
+                       n_jobs=-1, oob_score=False, random_state=234, verbose=0,
+                       warm_start=False)
+2021-05-15 09:31:41,133:INFO:create_model() succesfully completed......................................
+2021-05-15 09:31:41,203:INFO:Initializing blend_models()
+2021-05-15 09:31:41,203:INFO:blend_models(estimator_list=[LGBMClassifier(bagging_fraction=0.4, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.6,
+               importance_type='split', learning_rate=0.01, max_depth=-1,
+               min_child_samples=86, min_child_weight=0.001, min_split_gain=0.1,
+               n_estimators=180, n_jobs=-1, num_leaves=40, objective=None,
+               random_state=234, reg_alpha=1, reg_lambda=0.0001, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1, gamma=0, gpu_id=-1,
+              importance_type='gain', interaction_constraints='',
+              learning_rate=0.300000012, max_delta_step=0, max_depth=6,
+              min_child_weight=1, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=-1, num_parallel_tree=1,
+              objective='binary:logistic', random_state=234, reg_alpha=0,
+              reg_lambda=1, scale_pos_weight=1, subsample=1, tree_method='auto',
+              use_label_encoder=True, validate_parameters=1, verbosity=0), RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=100,
+                       n_jobs=-1, oob_score=False, random_state=234, verbose=0,
+                       warm_start=False), <catboost.core.CatBoostClassifier object at 0x000001901423A340>], fold=None, round=4, choose_better=False, optimize=Accuracy, method=soft, weights=None, fit_kwargs=None, groups=None, verbose=True, display=None)
+2021-05-15 09:31:41,204:INFO:Checking exceptions
+2021-05-15 09:31:41,204:INFO:Preparing display monitor
+2021-05-15 09:31:41,219:INFO:Importing libraries
+2021-05-15 09:31:41,219:INFO:Copying training dataset
+2021-05-15 09:31:41,227:INFO:Getting model names
+2021-05-15 09:31:41,233:INFO:SubProcess create_model() called ==================================
+2021-05-15 09:31:41,244:INFO:Initializing create_model()
+2021-05-15 09:31:41,244:INFO:create_model(estimator=VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x000001901423A340>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, verbose=True, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x00000190142644C0>, kwargs={})
+2021-05-15 09:31:41,244:INFO:Checking exceptions
+2021-05-15 09:31:41,244:INFO:Importing libraries
+2021-05-15 09:31:41,244:INFO:Copying training dataset
+2021-05-15 09:31:41,246:INFO:Defining folds
+2021-05-15 09:31:41,246:INFO:Declaring metric variables
+2021-05-15 09:31:41,252:INFO:Importing untrained model
+2021-05-15 09:31:41,252:INFO:Declaring custom model
+2021-05-15 09:31:41,262:INFO:Voting Classifier Imported succesfully
+2021-05-15 09:31:41,274:INFO:Starting cross validation
+2021-05-15 09:31:41,274:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:32:48,307:INFO:Calculating mean and std
+2021-05-15 09:32:48,308:INFO:Creating metrics dataframe
+2021-05-15 09:32:48,317:INFO:Finalizing model
+2021-05-15 09:33:00,183:INFO:Uploading results into container
+2021-05-15 09:33:00,183:INFO:Uploading model into container now
+2021-05-15 09:33:00,183:INFO:create_model_container: 21
+2021-05-15 09:33:00,183:INFO:master_model_container: 21
+2021-05-15 09:33:00,183:INFO:display_container: 8
+2021-05-15 09:33:00,189:INFO:VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x0000019014E501C0>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None)
+2021-05-15 09:33:00,189:INFO:create_model() succesfully completed......................................
+2021-05-15 09:33:00,248:INFO:SubProcess create_model() end ==================================
+2021-05-15 09:33:00,259:INFO:create_model_container: 21
+2021-05-15 09:33:00,259:INFO:master_model_container: 21
+2021-05-15 09:33:00,259:INFO:display_container: 8
+2021-05-15 09:33:00,266:INFO:VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x0000019014E501C0>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None)
+2021-05-15 09:33:00,266:INFO:blend_models() succesfully completed......................................
+2021-05-15 09:33:00,350:INFO:Initializing plot_model()
+2021-05-15 09:33:00,350:INFO:plot_model(plot=auc, fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x0000019014E501C0>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2021-05-15 09:33:00,350:INFO:Checking exceptions
+2021-05-15 09:33:00,352:INFO:Preparing display monitor
+2021-05-15 09:33:00,358:INFO:Preloading libraries
+2021-05-15 09:33:00,438:INFO:Copying training dataset
+2021-05-15 09:33:00,439:INFO:Copying test dataset
+2021-05-15 09:33:00,439:INFO:Plot type: auc
+2021-05-15 09:33:00,442:INFO:Fitting Model
+2021-05-15 09:33:00,443:INFO:Scoring test/hold-out set
+2021-05-15 09:33:00,746:INFO:Visual Rendered Successfully
+2021-05-15 09:33:00,802:INFO:plot_model() succesfully completed......................................
+2021-05-15 09:33:00,839:INFO:Initializing plot_model()
+2021-05-15 09:33:00,839:INFO:plot_model(plot=confusion_matrix, fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x0000019014E501C0>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2021-05-15 09:33:00,839:INFO:Checking exceptions
+2021-05-15 09:33:00,841:INFO:Preparing display monitor
+2021-05-15 09:33:00,850:INFO:Preloading libraries
+2021-05-15 09:33:00,929:INFO:Copying training dataset
+2021-05-15 09:33:00,930:INFO:Copying test dataset
+2021-05-15 09:33:00,930:INFO:Plot type: confusion_matrix
+2021-05-15 09:33:00,933:INFO:Fitting Model
+2021-05-15 09:33:00,934:INFO:Scoring test/hold-out set
+2021-05-15 09:33:01,181:INFO:Visual Rendered Successfully
+2021-05-15 09:33:01,235:INFO:plot_model() succesfully completed......................................
+2021-05-15 09:33:01,258:INFO:Initializing plot_model()
+2021-05-15 09:33:01,258:INFO:plot_model(plot=class_report, fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x0000019014E501C0>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2021-05-15 09:33:01,258:INFO:Checking exceptions
+2021-05-15 09:33:01,259:INFO:Preparing display monitor
+2021-05-15 09:33:01,265:INFO:Preloading libraries
+2021-05-15 09:33:01,344:INFO:Copying training dataset
+2021-05-15 09:33:01,345:INFO:Copying test dataset
+2021-05-15 09:33:01,345:INFO:Plot type: class_report
+2021-05-15 09:33:01,348:INFO:Fitting Model
+2021-05-15 09:33:01,349:INFO:Scoring test/hold-out set
+2021-05-15 09:33:01,667:INFO:Visual Rendered Successfully
+2021-05-15 09:33:01,727:INFO:plot_model() succesfully completed......................................
+2021-05-15 09:33:01,754:INFO:Initializing blend_models()
+2021-05-15 09:33:01,754:INFO:blend_models(estimator_list=[LGBMClassifier(bagging_fraction=0.4, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.6,
+               importance_type='split', learning_rate=0.01, max_depth=-1,
+               min_child_samples=86, min_child_weight=0.001, min_split_gain=0.1,
+               n_estimators=180, n_jobs=-1, num_leaves=40, objective=None,
+               random_state=234, reg_alpha=1, reg_lambda=0.0001, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1, gamma=0, gpu_id=-1,
+              importance_type='gain', interaction_constraints='',
+              learning_rate=0.300000012, max_delta_step=0, max_depth=6,
+              min_child_weight=1, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=-1, num_parallel_tree=1,
+              objective='binary:logistic', random_state=234, reg_alpha=0,
+              reg_lambda=1, scale_pos_weight=1, subsample=1, tree_method='auto',
+              use_label_encoder=True, validate_parameters=1, verbosity=0), RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=100,
+                       n_jobs=-1, oob_score=False, random_state=234, verbose=0,
+                       warm_start=False), <catboost.core.CatBoostClassifier object at 0x000001901423A340>], fold=None, round=4, choose_better=False, optimize=Accuracy, method=hard, weights=None, fit_kwargs=None, groups=None, verbose=True, display=None)
+2021-05-15 09:33:01,754:INFO:Checking exceptions
+2021-05-15 09:33:01,755:INFO:Preparing display monitor
+2021-05-15 09:33:01,771:INFO:Importing libraries
+2021-05-15 09:33:01,772:INFO:Copying training dataset
+2021-05-15 09:33:01,779:INFO:Getting model names
+2021-05-15 09:33:01,786:INFO:SubProcess create_model() called ==================================
+2021-05-15 09:33:01,797:INFO:Initializing create_model()
+2021-05-15 09:33:01,797:INFO:create_model(estimator=VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x000001901423A340>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='hard', weights=None), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, verbose=True, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x0000019009088F40>, kwargs={})
+2021-05-15 09:33:01,797:INFO:Checking exceptions
+2021-05-15 09:33:01,797:INFO:Importing libraries
+2021-05-15 09:33:01,797:INFO:Copying training dataset
+2021-05-15 09:33:01,798:INFO:Defining folds
+2021-05-15 09:33:01,798:INFO:Declaring metric variables
+2021-05-15 09:33:01,804:INFO:Importing untrained model
+2021-05-15 09:33:01,805:INFO:Declaring custom model
+2021-05-15 09:33:01,814:INFO:Voting Classifier Imported succesfully
+2021-05-15 09:33:01,826:INFO:Starting cross validation
+2021-05-15 09:33:01,827:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:34:06,382:INFO:Calculating mean and std
+2021-05-15 09:34:06,384:INFO:Creating metrics dataframe
+2021-05-15 09:34:06,396:INFO:Finalizing model
+2021-05-15 09:34:18,759:INFO:Uploading results into container
+2021-05-15 09:34:18,759:INFO:Uploading model into container now
+2021-05-15 09:34:18,759:INFO:create_model_container: 22
+2021-05-15 09:34:18,759:INFO:master_model_container: 22
+2021-05-15 09:34:18,760:INFO:display_container: 9
+2021-05-15 09:34:18,770:INFO:VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x000001900D2566A0>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='hard', weights=None)
+2021-05-15 09:34:18,770:INFO:create_model() succesfully completed......................................
+2021-05-15 09:34:18,850:INFO:SubProcess create_model() end ==================================
+2021-05-15 09:34:18,864:INFO:create_model_container: 22
+2021-05-15 09:34:18,864:INFO:master_model_container: 22
+2021-05-15 09:34:18,864:INFO:display_container: 9
+2021-05-15 09:34:18,870:INFO:VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x000001900D2566A0>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='hard', weights=None)
+2021-05-15 09:34:18,870:INFO:blend_models() succesfully completed......................................
+2021-05-15 09:34:18,953:INFO:Initializing plot_model()
+2021-05-15 09:34:18,954:INFO:plot_model(plot=confusion_matrix, fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x000001900D2566A0>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='hard', weights=None), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2021-05-15 09:34:18,954:INFO:Checking exceptions
+2021-05-15 09:34:18,956:INFO:Preparing display monitor
+2021-05-15 09:34:18,961:INFO:Preloading libraries
+2021-05-15 09:34:19,043:INFO:Copying training dataset
+2021-05-15 09:34:19,044:INFO:Copying test dataset
+2021-05-15 09:34:19,045:INFO:Plot type: confusion_matrix
+2021-05-15 09:34:19,047:INFO:Fitting Model
+2021-05-15 09:34:19,048:INFO:Scoring test/hold-out set
+2021-05-15 09:34:19,399:INFO:Visual Rendered Successfully
+2021-05-15 09:34:19,457:INFO:plot_model() succesfully completed......................................
+2021-05-15 09:34:19,480:INFO:Initializing plot_model()
+2021-05-15 09:34:19,480:INFO:plot_model(plot=class_report, fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x000001900D2566A0>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='hard', weights=None), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2021-05-15 09:34:19,480:INFO:Checking exceptions
+2021-05-15 09:34:19,481:INFO:Preparing display monitor
+2021-05-15 09:34:19,488:INFO:Preloading libraries
+2021-05-15 09:34:19,574:INFO:Copying training dataset
+2021-05-15 09:34:19,575:INFO:Copying test dataset
+2021-05-15 09:34:19,575:INFO:Plot type: class_report
+2021-05-15 09:34:19,578:INFO:Fitting Model
+2021-05-15 09:34:19,579:INFO:Scoring test/hold-out set
+2021-05-15 09:34:20,005:INFO:Visual Rendered Successfully
+2021-05-15 09:34:20,065:INFO:plot_model() succesfully completed......................................
+2021-05-15 09:34:20,078:INFO:Initializing stack_models()
+2021-05-15 09:34:20,078:INFO:stack_models(estimator_list=[XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1, gamma=0, gpu_id=-1,
+              importance_type='gain', interaction_constraints='',
+              learning_rate=0.300000012, max_delta_step=0, max_depth=6,
+              min_child_weight=1, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=-1, num_parallel_tree=1,
+              objective='binary:logistic', random_state=234, reg_alpha=0,
+              reg_lambda=1, scale_pos_weight=1, subsample=1, tree_method='auto',
+              use_label_encoder=True, validate_parameters=1, verbosity=0), RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=100,
+                       n_jobs=-1, oob_score=False, random_state=234, verbose=0,
+                       warm_start=False), <catboost.core.CatBoostClassifier object at 0x000001901423A340>], meta_model=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=234, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), fold=None, round=4, method=auto, restack=True, choose_better=False, optimize=Accuracy, fit_kwargs=None, groups=None, verbose=True, display=None)
+2021-05-15 09:34:20,078:INFO:Checking exceptions
+2021-05-15 09:34:20,079:INFO:Defining meta model
+2021-05-15 09:34:20,080:INFO:Preparing display monitor
+2021-05-15 09:34:20,094:INFO:Copying training dataset
+2021-05-15 09:34:20,101:INFO:Getting model names
+2021-05-15 09:34:20,102:INFO:[('xgboost', XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1, gamma=0, gpu_id=-1,
+              importance_type='gain', interaction_constraints='',
+              learning_rate=0.300000012, max_delta_step=0, max_depth=6,
+              min_child_weight=1, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=-1, num_parallel_tree=1,
+              objective='binary:logistic', random_state=234, reg_alpha=0,
+              reg_lambda=1, scale_pos_weight=1, subsample=1, tree_method='auto',
+              use_label_encoder=True, validate_parameters=1, verbosity=0)), ('rf', RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=100,
+                       n_jobs=-1, oob_score=False, random_state=234, verbose=0,
+                       warm_start=False)), ('catboost', <catboost.core.CatBoostClassifier object at 0x000001901423A340>)]
+2021-05-15 09:34:20,110:INFO:SubProcess create_model() called ==================================
+2021-05-15 09:34:20,123:INFO:Initializing create_model()
+2021-05-15 09:34:20,123:INFO:create_model(estimator=StackingClassifier(cv=StratifiedKFold(n_splits=10, random_state=None, shuffle=False),
+                   estimators=[('xgboost',
+                                XGBClassifier(base_score=0.5, booster='gbtree',
+                                              colsample_bylevel=1,
+                                              colsample_bynode=1,
+                                              colsample_bytree=1, gamma=0,
+                                              gpu_id=-1, importance_type='gain',
+                                              interaction_constraints='',
+                                              learning_rate=0.300000012,
+                                              max_delta_step=0, max_depth=6,
+                                              min_child_weight=...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=234,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  silent=True, subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, verbose=True, system=False, metrics=None, display=<pycaret.internal.Display.Display object at 0x000001900D81F100>, kwargs={})
+2021-05-15 09:34:20,123:INFO:Checking exceptions
+2021-05-15 09:34:20,123:INFO:Importing libraries
+2021-05-15 09:34:20,123:INFO:Copying training dataset
+2021-05-15 09:34:20,125:INFO:Defining folds
+2021-05-15 09:34:20,125:INFO:Declaring metric variables
+2021-05-15 09:34:20,132:INFO:Importing untrained model
+2021-05-15 09:34:20,132:INFO:Declaring custom model
+2021-05-15 09:34:20,144:INFO:Stacking Classifier Imported succesfully
+2021-05-15 09:34:20,158:INFO:Starting cross validation
+2021-05-15 09:34:20,159:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:50:02,239:INFO:Calculating mean and std
+2021-05-15 09:50:02,240:INFO:Creating metrics dataframe
+2021-05-15 09:50:02,251:INFO:Finalizing model
+2021-05-15 09:51:14,725:INFO:Uploading results into container
+2021-05-15 09:51:14,725:INFO:Uploading model into container now
+2021-05-15 09:51:14,725:INFO:create_model_container: 23
+2021-05-15 09:51:14,725:INFO:master_model_container: 23
+2021-05-15 09:51:14,726:INFO:display_container: 10
+2021-05-15 09:51:14,735:INFO:StackingClassifier(cv=StratifiedKFold(n_splits=10,
+        random_state=RandomState(MT19937) at 0x19014DE5340, shuffle=False),
+                   estimators=[('xgboost',
+                                XGBClassifier(base_score=0.5, booster='gbtree',
+                                              colsample_bylevel=1,
+                                              colsample_bynode=1,
+                                              colsample_bytree=1, gamma=0,
+                                              gpu_id=-1, importance_type='gain',
+                                              interaction_constraints='',
+                                              learning_rate=0.300000012,
+                                              max_delta_step=...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=234,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  silent=True, subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2021-05-15 09:51:14,735:INFO:create_model() succesfully completed......................................
+2021-05-15 09:51:14,830:INFO:SubProcess create_model() end ==================================
+2021-05-15 09:51:14,847:INFO:create_model_container: 23
+2021-05-15 09:51:14,847:INFO:master_model_container: 23
+2021-05-15 09:51:14,847:INFO:display_container: 10
+2021-05-15 09:51:14,854:INFO:StackingClassifier(cv=StratifiedKFold(n_splits=10,
+        random_state=RandomState(MT19937) at 0x19014DE5340, shuffle=False),
+                   estimators=[('xgboost',
+                                XGBClassifier(base_score=0.5, booster='gbtree',
+                                              colsample_bylevel=1,
+                                              colsample_bynode=1,
+                                              colsample_bytree=1, gamma=0,
+                                              gpu_id=-1, importance_type='gain',
+                                              interaction_constraints='',
+                                              learning_rate=0.300000012,
+                                              max_delta_step=...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=234,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  silent=True, subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0)
+2021-05-15 09:51:14,855:INFO:stack_models() succesfully completed......................................
+2021-05-15 09:51:14,950:INFO:Initializing plot_model()
+2021-05-15 09:51:14,950:INFO:plot_model(plot=confusion_matrix, fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=StackingClassifier(cv=StratifiedKFold(n_splits=10,
+        random_state=RandomState(MT19937) at 0x19014DE5340, shuffle=False),
+                   estimators=[('xgboost',
+                                XGBClassifier(base_score=0.5, booster='gbtree',
+                                              colsample_bylevel=1,
+                                              colsample_bynode=1,
+                                              colsample_bytree=1, gamma=0,
+                                              gpu_id=-1, importance_type='gain',
+                                              interaction_constraints='',
+                                              learning_rate=0.300000012,
+                                              max_delta_step=...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=234,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  silent=True, subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2021-05-15 09:51:14,950:INFO:Checking exceptions
+2021-05-15 09:51:14,951:INFO:Preparing display monitor
+2021-05-15 09:51:14,957:INFO:Preloading libraries
+2021-05-15 09:51:15,039:INFO:Copying training dataset
+2021-05-15 09:51:15,040:INFO:Copying test dataset
+2021-05-15 09:51:15,041:INFO:Plot type: confusion_matrix
+2021-05-15 09:51:15,044:INFO:Fitting Model
+2021-05-15 09:51:15,046:INFO:Scoring test/hold-out set
+2021-05-15 09:51:15,327:INFO:Visual Rendered Successfully
+2021-05-15 09:51:15,396:INFO:plot_model() succesfully completed......................................
+2021-05-15 09:51:15,420:INFO:Initializing plot_model()
+2021-05-15 09:51:15,420:INFO:plot_model(plot=class_report, fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=StackingClassifier(cv=StratifiedKFold(n_splits=10,
+        random_state=RandomState(MT19937) at 0x19014DE5340, shuffle=False),
+                   estimators=[('xgboost',
+                                XGBClassifier(base_score=0.5, booster='gbtree',
+                                              colsample_bylevel=1,
+                                              colsample_bynode=1,
+                                              colsample_bytree=1, gamma=0,
+                                              gpu_id=-1, importance_type='gain',
+                                              interaction_constraints='',
+                                              learning_rate=0.300000012,
+                                              max_delta_step=...
+                                                  colsample_bytree=1.0,
+                                                  importance_type='split',
+                                                  learning_rate=0.1,
+                                                  max_depth=-1,
+                                                  min_child_samples=20,
+                                                  min_child_weight=0.001,
+                                                  min_split_gain=0.0,
+                                                  n_estimators=100, n_jobs=-1,
+                                                  num_leaves=31, objective=None,
+                                                  random_state=234,
+                                                  reg_alpha=0.0, reg_lambda=0.0,
+                                                  silent=True, subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0),
+                   n_jobs=-1, passthrough=True, stack_method='auto', verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, save=False, scale=1, system=True)
+2021-05-15 09:51:15,420:INFO:Checking exceptions
+2021-05-15 09:51:15,422:INFO:Preparing display monitor
+2021-05-15 09:51:15,430:INFO:Preloading libraries
+2021-05-15 09:51:15,517:INFO:Copying training dataset
+2021-05-15 09:51:15,519:INFO:Copying test dataset
+2021-05-15 09:51:15,520:INFO:Plot type: class_report
+2021-05-15 09:51:15,523:INFO:Fitting Model
+2021-05-15 09:51:15,526:INFO:Scoring test/hold-out set
+2021-05-15 09:51:15,877:INFO:Visual Rendered Successfully
+2021-05-15 09:51:15,952:INFO:plot_model() succesfully completed......................................
+2021-05-15 09:51:15,960:INFO:Initializing automl()
+2021-05-15 09:51:15,960:INFO:automl(optimize=AUC, use_holdout=False)
+2021-05-15 09:51:15,961:INFO:Model Selection Basis : CV Results on Training set
+2021-05-15 09:51:15,969:INFO:Initializing create_model()
+2021-05-15 09:51:15,969:INFO:create_model(estimator=VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x0000019014E501C0>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs=None, groups=None, refit=True, verbose=False, system=False, metrics=None, display=None, kwargs={})
+2021-05-15 09:51:15,969:INFO:Checking exceptions
+2021-05-15 09:51:15,970:INFO:Importing libraries
+2021-05-15 09:51:15,970:INFO:Copying training dataset
+2021-05-15 09:51:15,971:INFO:Defining folds
+2021-05-15 09:51:15,971:INFO:Declaring metric variables
+2021-05-15 09:51:15,971:INFO:Importing untrained model
+2021-05-15 09:51:15,971:INFO:Declaring custom model
+2021-05-15 09:51:15,974:INFO:Voting Classifier Imported succesfully
+2021-05-15 09:51:15,974:INFO:Cross validation set to False
+2021-05-15 09:51:15,974:INFO:Fitting Model
+2021-05-15 09:51:27,767:INFO:VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x000001900EB09A30>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None)
+2021-05-15 09:51:27,767:INFO:create_models() succesfully completed......................................
+2021-05-15 09:51:27,854:INFO:VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x000001900EB09A30>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None)
+2021-05-15 09:51:27,854:INFO:automl() succesfully completed......................................
+2021-05-15 09:51:27,893:INFO:Initializing predict_model()
+2021-05-15 09:51:27,893:INFO:predict_model(estimator=VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x000001900EB09A30>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2021-05-15 09:51:27,893:INFO:Checking exceptions
+2021-05-15 09:51:27,893:INFO:Preloading libraries
+2021-05-15 09:51:27,893:INFO:Preparing display monitor
+2021-05-15 09:51:28,153:INFO:Initializing finalize_model()
+2021-05-15 09:51:28,153:INFO:finalize_model(estimator=VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x000001900EB09A30>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), fit_kwargs=None, groups=None, model_only=True, display=None)
+2021-05-15 09:51:28,159:INFO:Finalizing VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x000001900EB09A30>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None)
+2021-05-15 09:51:28,165:INFO:Initializing create_model()
+2021-05-15 09:51:28,165:INFO:create_model(estimator=VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x000001900EB09A30>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, verbose=False, system=False, metrics=None, display=None, kwargs={})
+2021-05-15 09:51:28,165:INFO:Checking exceptions
+2021-05-15 09:51:28,166:INFO:Importing libraries
+2021-05-15 09:51:28,166:INFO:Copying training dataset
+2021-05-15 09:51:28,167:INFO:Defining folds
+2021-05-15 09:51:28,167:INFO:Declaring metric variables
+2021-05-15 09:51:28,167:INFO:Importing untrained model
+2021-05-15 09:51:28,167:INFO:Declaring custom model
+2021-05-15 09:51:28,170:INFO:Voting Classifier Imported succesfully
+2021-05-15 09:51:28,170:INFO:Starting cross validation
+2021-05-15 09:51:28,171:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2021-05-15 09:52:52,066:INFO:Calculating mean and std
+2021-05-15 09:52:52,066:INFO:Creating metrics dataframe
+2021-05-15 09:52:52,070:INFO:Finalizing model
+2021-05-15 09:53:05,352:INFO:Uploading results into container
+2021-05-15 09:53:05,352:INFO:Uploading model into container now
+2021-05-15 09:53:05,352:INFO:create_model_container: 24
+2021-05-15 09:53:05,352:INFO:master_model_container: 24
+2021-05-15 09:53:05,352:INFO:display_container: 12
+2021-05-15 09:53:05,363:INFO:VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x00000190154FD820>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None)
+2021-05-15 09:53:05,363:INFO:create_model() succesfully completed......................................
+2021-05-15 09:53:05,438:INFO:create_model_container: 24
+2021-05-15 09:53:05,438:INFO:master_model_container: 24
+2021-05-15 09:53:05,438:INFO:display_container: 11
+2021-05-15 09:53:05,442:INFO:VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x00000190154FD820>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None)
+2021-05-15 09:53:05,442:INFO:finalize_model() succesfully completed......................................
+2021-05-15 09:53:05,539:INFO:Initializing save_model()
+2021-05-15 09:53:05,539:INFO:save_model(model=VotingClassifier(estimators=[('lightgbm',
+                              LGBMClassifier(bagging_fraction=0.4,
+                                             bagging_freq=3,
+                                             boosting_type='gbdt',
+                                             class_weight=None,
+                                             colsample_bytree=1.0,
+                                             feature_fraction=0.6,
+                                             importance_type='split',
+                                             learning_rate=0.01, max_depth=-1,
+                                             min_child_samples=86,
+                                             min_child_weight=0.001,
+                                             min_split_gain=0.1,
+                                             n_estimators=180, n_jobs=-1,
+                                             num_leaves=40, objective=None,
+                                             ra...
+                                                     min_impurity_decrease=0.0,
+                                                     min_impurity_split=None,
+                                                     min_samples_leaf=1,
+                                                     min_samples_split=2,
+                                                     min_weight_fraction_leaf=0.0,
+                                                     n_estimators=100,
+                                                     n_jobs=-1, oob_score=False,
+                                                     random_state=234,
+                                                     verbose=0,
+                                                     warm_start=False)),
+                             ('catboost',
+                              <catboost.core.CatBoostClassifier object at 0x00000190154FD820>)],
+                 flatten_transform=True, n_jobs=-1, verbose=False,
+                 voting='soft', weights=None), model_name=Final Model 06May2021, prep_pipe_=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['job', 'marital',
+                                                            'education',
+                                                            'housing', 'loan',
+                                                            'contact', 'month',
+                                                            'day_of_week',
+                                                            'poutcome'],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=['age', 'duration',
+                                                          'campaign',
+                                                          'emp.var.rate',
+                                                          'cons.price.idx',
+                                                          'cons.conf.idx',
+                                                          'eur...
+                ('cluster_all', 'passthrough'), ('dummy', Dummify(target='y')),
+                ('fix_perfect', Remove_100(target='y')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'),
+                ('fix_multi',
+                 Fix_multicollinearity(correlation_with_target_preference=None,
+                                       correlation_with_target_threshold=0.0,
+                                       target_variable='y', threshold=0.95)),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False), verbose=True)
+2021-05-15 09:53:05,540:INFO:Adding model into prep_pipe
+2021-05-15 09:53:05,662:INFO:Final Model 06May2021.pkl saved in current working directory
+2021-05-15 09:53:05,680:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['job', 'marital',
+                                                            'education',
+                                                            'housing', 'loan',
+                                                            'contact', 'month',
+                                                            'day_of_week',
+                                                            'poutcome'],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[],
+                                      ml_usecase='classification',
+                                      numerical_features=['age', 'duration',
+                                                          'campaign',
+                                                          'emp.var.rate',
+                                                          'cons.price.idx',
+                                                          'cons.conf.idx',
+                                                          'eur...
+                                                                      min_impurity_decrease=0.0,
+                                                                      min_impurity_split=None,
+                                                                      min_samples_leaf=1,
+                                                                      min_samples_split=2,
+                                                                      min_weight_fraction_leaf=0.0,
+                                                                      n_estimators=100,
+                                                                      n_jobs=-1,
+                                                                      oob_score=False,
+                                                                      random_state=234,
+                                                                      verbose=0,
+                                                                      warm_start=False)),
+                                              ('catboost',
+                                               <catboost.core.CatBoostClassifier object at 0x00000190154FD820>)],
+                                  flatten_transform=True, n_jobs=-1,
+                                  verbose=False, voting='soft',
+                                  weights=None)]],
+         verbose=False)
+2021-05-15 09:53:05,680:INFO:save_model() succesfully completed......................................
